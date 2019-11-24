@@ -14,7 +14,7 @@ public class MySpringKafkaMessageConsumerPlanetApplication {
         SpringApplication.run(MySpringKafkaMessageConsumerPlanetApplication.class, args);
     }
 
-    @KafkaListener(groupId = "mykafkagroup", topics = TOPIC_NAME) //, properties = { "enable.auto.commit=true", "auto.commit.interval.ms=1000", "poll-interval=100"})
+    @KafkaListener(groupId = "mykafkagroup", topics = TOPIC_NAME)
     public void listen(ConsumerRecord<?, ?> record) {
         System.out.printf("offset = %d, key = %s, value = %s%n", record.offset(), record.key(), record.value());
     }
