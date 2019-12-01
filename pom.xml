@@ -11,6 +11,8 @@
     <modules>
         <module>myspringkafkamessageproducerplanet</module>
         <module>myspringkafkamessageconsumerplanet</module>
+        <module>myspringkafkastreamsproducerplanet</module>
+        <module>myspringkafkaprocessingplanet</module>
     </modules>
 
 
